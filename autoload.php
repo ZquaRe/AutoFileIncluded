@@ -1,6 +1,6 @@
 <?php
 //File path
-foreach (__AutoLoad('inc/') as $value) {
+foreach (__AutoLoad(__DIR__.'/inc/') as $value) {
     require_once ($value);
 }
 function __AutoLoad($Pathe) {
